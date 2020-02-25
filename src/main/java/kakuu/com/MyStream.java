@@ -18,7 +18,7 @@ public class MyStream {
             // 通过这个输入流，就可以把数据从硬盘，读取到Java的虚拟机中来，也就是读取到内存中
             //创建字节数组长度等于文件的长度
             byte[] all = new byte[(int) f.length()];
-            //以字节流的形式读取文件的所有内容
+            //以字节流的形式读取文件的所有内容1
             fis.read(all);
             for (byte b : all) {
                 System.out.println(b);

@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class MyCharStream {
-    public void readChar(String path) {
+    public static void readChar(String path) {
         File f = new File(path);
         //创建字符读取流
         try(FileReader fr = new FileReader(f)){
@@ -23,7 +23,7 @@ public class MyCharStream {
 
     }
 
-    public void writeChar(String path, String content) {
+    public static void writeChar(String path, String content) {
         File f = new File(path);
         //准备字符流数组
         char[] all = content.toCharArray();

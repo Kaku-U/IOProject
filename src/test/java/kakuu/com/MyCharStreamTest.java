@@ -8,7 +8,7 @@ public class MyCharStreamTest {
     @Test
     public void readCharTest() {
         String s = "D:/Project/Sample/ioProject/DragonNest.txt";
-        MyStream.readFile(s);
+        MyCharStream.readChar(s);
         Assert.assertTrue(true);
     }
 
@@ -16,7 +16,7 @@ public class MyCharStreamTest {
     public void writeCharTest() {
         String path = "D:/Project/Sample/ioProject/LOL.txt";
         String content = "League of legends";
-        MyStream.writeFile(path,content);
+        MyCharStream.writeChar(path,content);
         Assert.assertTrue(true);
     }
 }
